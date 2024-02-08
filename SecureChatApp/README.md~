@@ -1,0 +1,59 @@
+# Secure Chat App
+
+The Secure Chat App is a web-based chat application that provides end-to-end encryption for secure communication between users. This project demonstrates the implementation of encryption algorithms, secure communication protocols, and web application development.
+
+## Project Structure
+
+The project includes the following files and directories:
+
+- **index.html**: The main entry point of the application, providing the user interface for chatting.
+- **main.css**: Cascading Style Sheets (CSS) file for styling the user interface.
+- **chat.js**: JavaScript file for handling chat functionality, including sending and receiving messages.
+- **encryption.js**: JavaScript file containing encryption and decryption logic using the Web Crypto API.
+- **helpers.php**: PHP file containing helper functions for the application.
+- **db.php**: PHP file for establishing a connection to the SQLite database.
+- **models/User.php**: PHP file defining the User class for managing user accounts and public keys.
+- **models/Message.php**: PHP file defining the Message class for managing chat messages.
+- **routes/chat.php**: PHP file handling chat messages, including sending and retrieving messages.
+- **routes/users.php**: PHP file managing user registration and key management.
+- **utils/encryption.php**: PHP file containing encryption-related functions.
+- **securechat.db**: SQLite database file for storing user accounts and chat messages.
+
+## Key Concepts
+
+The Secure Chat App incorporates the following key concepts:
+
+- **AES Encryption**: Symmetric key encryption using the Advanced Encryption Standard (AES) for securing message content.
+- **RSA Asymmetric Key Exchange**: Asymmetric key exchange using RSA for securely sharing encryption keys between users.
+- **Web Interface**: A simple graphical user interface (GUI) implemented with HTML, CSS, and JavaScript.
+- **Database**: SQLite database for storing user accounts and chat messages.
+
+## Getting Started
+
+1. Clone the repository: `git clone https://github.com/your-username/secure-chat-app.git`
+2. Set up a web server with PHP support (e.g., Apache, Nginx).
+3. Create an SQLite database named `securechat.db` and execute the SQL script in `create_database.sql` to create tables.
+4. Customize and configure the PHP files to match your environment and security requirements.
+5. Open `index.html` in a web browser to start using the Secure Chat App.
+
+## Usage
+
+- Register as a user to create an account and generate a public-private key pair.
+- Log in with your username to start chatting securely with other registered users.
+- Send and receive messages with end-to-end encryption.
+
+## Security Considerations
+
+- Ensure that your web server is configured securely and follows best practices for PHP applications.
+- Manage encryption keys and user data securely to prevent unauthorized access.
+- Regularly update the application and dependencies to address security vulnerabilities.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- The Secure Chat App was developed by [Your Name] as a demonstration of secure communication techniques.
+- Special thanks to [Contributor Name] for their contributions to this project.
+
